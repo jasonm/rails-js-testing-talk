@@ -10,7 +10,9 @@ li {
   font-size: 40px;
 }
 
-
+ul li ul li {
+  font-size: 36px;
+}
 
 body.presenter_view div#current_presenter_notes li {
   font-size: 14px;

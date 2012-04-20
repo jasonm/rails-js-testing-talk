@@ -673,7 +673,9 @@ li {
   font-size: 40px;
 }
 
-
+ul li ul li {
+  font-size: 36px;
+}
 
 body.presenter_view div#current_presenter_notes li {
   font-size: 14px;
@@ -1283,7 +1285,7 @@ body.presenter_view div#current_presenter_notes section {
     </div>
     <div class="slides">
       
-      <!-- slide source: slides/index.md -->
+      <!-- slide source: slides/0_intro.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
@@ -1291,7 +1293,14 @@ body.presenter_view div#current_presenter_notes section {
             <header><h1>Testing apps with Rails and JavaScript</h1></header>
             
             
-            <section><p>(This is an HTML slide deck. Press "h" for help, or use the arrow keys to navigate. Press "p" for presenter notes, where you'll find a bunch of links, especially towards the end.)</p>
+            <section><ul>
+<li>This is an HTML slide deck.<ul>
+<li>Use the left/right arrow keys to navigate.</li>
+<li>Press "h" for help.</li>
+<li>Press "p" for presenter notes.</li>
+</ul>
+</li>
+</ul>
 </section>
             
           </div>
@@ -1304,22 +1313,22 @@ body.presenter_view div#current_presenter_notes section {
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/index.md">slides/index.md</a>
+              Source: <a href="slides/0_intro.md">slides/0_intro.md</a>
             </aside>
             
             <aside class="page_number">
-              1/2
+              1/30
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: slides/index.md -->
+      <!-- slide source: slides/0_intro.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
             
-            <header><h1>Testing!</h1></header>
+            <header><h1>Testing! with Jason Morrison.</h1></header>
             
             
           </div>
@@ -1327,28 +1336,1043 @@ body.presenter_view div#current_presenter_notes section {
             <header><h1>Presenter Notes</h1></header>
             <section>
             
-              <h2>* Hands up: Ruby/Rails? JS? Other?  -- Testing?</h2>
-<h1>TL;DR</h1>
-<ul>
-<li>Write tests, ideally first, so you can:
-<strong> Deliver working software
-</strong> Refactor and change with confidence
-** Write clean code</li>
-<li>Use capybara, capybara-webkit, jasmine-gem HEAD</li>
-<li>Use headless gem on CI, test against webkit</li>
+              <ul>
+<li>Hands up: Ruby/Rails? JS? Other? -- Testing?</li>
+<li>Way too much ground to comprehensively cover TDD practices, techniques, and tools</li>
+<li>Hoping you find a few interesting things that you can apply right now</li>
+<li>I'm interested in presenting a broad overview for a range of backgrounds, providing follow-up resources for a range of backgrounds, and starting discussion</li>
 </ul>
-<h1>Presenter Notes</h1>
             
             </section>
           </div>
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/index.md">slides/index.md</a>
+              Source: <a href="slides/0_intro.md">slides/0_intro.md</a>
             </aside>
             
             <aside class="page_number">
-              2/2
+              2/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/0_intro.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>This talk</h1></header>
+            
+            
+            <section><ul>
+<li>1: Goals</li>
+<li>2: Methods</li>
+<li>3: Tools and examples</li>
+<li>4: Resources</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/0_intro.md">slides/0_intro.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              3/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/1_goals.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>1/4: Goals</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/1_goals.md">slides/1_goals.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/1_goals.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Cribbed from:</h1></header>
+            
+            
+            <section><ul>
+<li><a href="http://playbook.thoughtbot.com/finding-a-rhythm/test-driven-development/">thoughtbot playbook</a> </li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/1_goals.md">slides/1_goals.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/1_goals.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Business goals</h1></header>
+            
+            
+            <section><ul>
+<li>Deliver more value, faster</li>
+<li>Always ship working software</li>
+<li>Adapt to change quickly</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/1_goals.md">slides/1_goals.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/1_goals.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Code goals</h1></header>
+            
+            
+            <section><ul>
+<li>Readable specs and code</li>
+<li>Clean public interfaces</li>
+<li>Decoupled modules</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/1_goals.md">slides/1_goals.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/1_goals.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Process goals</h1></header>
+            
+            
+            <section><ul>
+<li>Regression safety net</li>
+<li>Fearless refactoring</li>
+<li>Team trust</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/1_goals.md">slides/1_goals.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              8/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/2_methods.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>2/4: Methods</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/2_methods.md">slides/2_methods.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/2_methods.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>How to test</h1></header>
+            
+            
+            <section><ul>
+<li>Write test first.</li>
+<li>Red-Green-Refactor cycle.</li>
+<li>Feedback during development.</li>
+<li>Catch regressions later.</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/2_methods.md">slides/2_methods.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              10/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/2_methods.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Outside-in Development</h1></header>
+            
+            
+            <section><ul>
+<li>Focus on satisfying user's needs</li>
+</ul>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul>
+<li>Start with integration / acceptance tests, drill in</li>
+<li>Process of "driving out" or "motivating"</li>
+<li>Gives us clear understanding of goals and motivation of features</li>
+<li>Explicitly requires stakeholders to define who, what and <em>why</em>.</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/2_methods.md">slides/2_methods.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/2_methods.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Integration testing</h1></header>
+            
+            
+            <section><ul>
+<li>Full stack</li>
+<li>How things fit together</li>
+</ul>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul>
+<li>Exercises entire stack and how different units interact with each other.</li>
+<li>High level, slower</li>
+<li>Can expose defects not found in unit tests.</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/2_methods.md">slides/2_methods.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              12/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/2_methods.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Isolation testing</h1></header>
+            
+            
+            <section><ul>
+<li>Smaller pieces</li>
+<li>Code design tool</li>
+</ul>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul>
+<li>Specify behavior of smaller units of software.</li>
+<li>Tight feedback &ndash; loop</li>
+<li>Low level, fast</li>
+<li>Useful design tool, bad code is hard to test.</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/2_methods.md">slides/2_methods.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              13/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/2_methods.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>What to test</h1></header>
+            
+            
+            <section><p>TODO</p>
+<p>integration: coarsely-grained user stories, "tracer bullet" / happy cases</p>
+<p>public APIs of your modules (sanity checks, correctness checks, regression test cases, test-driving to build good interfaces)</p>
+<p>especially: complex logic (model computations, view/presentation helpers with date/time computation, comparisons, edge cases)</p>
+<p>brittle integration points (event bindings)</p>
+<p>dont test: framework, low-cost failures</p>
+<p>dont neglect to test: things that are hard to test</p>
+<p>http://37signals.com/svn/posts/3159-testing-like-the-tsa</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/2_methods.md">slides/2_methods.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              14/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/3_tools.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>3/4: Tools and examples</h1></header>
+            
+            
+            <section><ul>
+<li>Writing integration tests</li>
+<li>Writing isolation tests</li>
+<li>Running your tests</li>
+</ul>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/3_tools.md">slides/3_tools.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/3_tools.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Writing integration tests</h1></header>
+            
+            
+            <section><ul>
+<li><code>capybara</code></li>
+</ul>
+<h1>TODO: Example of capybara request spec</h1>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/3_tools.md">slides/3_tools.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              16/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/3_tools.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Writing Rails isolation tests</h1></header>
+            
+            
+            <section><ul>
+<li><code>RSpec</code></li>
+<li><code>factory_girl</code></li>
+<li><code>mocha</code></li>
+</ul>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul>
+<li>TODO: Example code of rspec, factory_girl, mocha</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/3_tools.md">slides/3_tools.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              17/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/3_tools.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Writing isolation tests</h1></header>
+            
+            
+            <section><ul>
+<li>From: Phil Sarin, <a href="http://4cupsr.us/blog/2011/9/12/making-javascript-unit-testing-work-part-1-what-matters.html">Making JavaScript Unit Testing Work</a><ul>
+<li>Ease of writing readable tests</li>
+<li>Mocking</li>
+<li>DRY fixtures</li>
+<li>Continuous integration</li>
+<li>Support for your favorite debugging tools</li>
+<li>Support for your backend</li>
+<li>Cross-browser compatibility</li>
+</ul>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/3_tools.md">slides/3_tools.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              18/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/3_tools.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Writing JavaScript isolation tests</h1></header>
+            
+            
+            <section><ul>
+<li><a href="http://pivotal.github.com/jasmine/">jasmine</a><ul>
+<li><a href="http://github.com/pivotal/jasmine-gem">jasmine-gem HEAD</a></li>
+<li><a href="https://github.com/velesin/jasmine-jquery">jasmine-jquery</a></li>
+<li><a href="https://github.com/raganwald/Underscore-Matchers-for-Jasmine">Underscore-MatchersForJasmine</a></li>
+<li><a href="sinonjs.org">sinon.js</a></li>
+</ul>
+</li>
+</ul>
+<p>TODO: Example code of jasmine, jasmine fakes, jasmine-jquery, sinon</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/3_tools.md">slides/3_tools.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              19/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/3_tools.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Interesting JavaScript tests: Timers</h1></header>
+            
+            
+            <section><p>TODO: Example timer test</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/3_tools.md">slides/3_tools.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              20/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/3_tools.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Interesting JavaScript tests: XHR</h1></header>
+            
+            
+            <section><p>TODO: Example XHR test with fake server (sinon)</p>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul>
+<li>Alternatively, just mock $.ajax with Jasmine</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/3_tools.md">slides/3_tools.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              21/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/3_tools.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Interesting JavaScript tests: Async code</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/3_tools.md">slides/3_tools.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              22/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/3_tools.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Running your tests</h1></header>
+            
+            
+            <section><ul>
+<li><a href="http://github.com/thoughtbot/capybara-webkit">capybara-webkit</a></li>
+<li><a href="http://rubygems.org/gems/selenium-webdriver">selenium-webdriver</a></li>
+<li><code>rake jasmine:ci</code></li>
+<li><a href="http://johnbintz.github.com/jasmine-headless-webkit/">jasmine-headless-webkit</a></li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/3_tools.md">slides/3_tools.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              23/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/3_tools.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Continuous integration</h1></header>
+            
+            
+            <section><ul>
+<li><a href="http://www.jetbrains.com/teamcity/">TeamCity</a></li>
+<li><a href="https://www.tddium.com/">Tddium</a></li>
+</ul>
+<p>TODO: screenshots?</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/3_tools.md">slides/3_tools.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              24/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/4_resources.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>4/4: Resources</h1></header>
+            
+            
+            <section><ul>
+<li>General TDD</li>
+<li>Rails TDD</li>
+<li>JavaScript TDD</li>
+<li>Writing JavaScript</li>
+</ul>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/4_resources.md">slides/4_resources.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              25/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/4_resources.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Further reading: General TDD</h1></header>
+            
+            
+            <section><ul>
+<li><a href="http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530">Test Driven Development by Example</a><ul>
+<li>by Kent Beck</li>
+</ul>
+</li>
+<li><a href="http://www.amazon.com/xUnit-Test-Patterns-Refactoring-Code/dp/0131495054">xUnit Test Patterns</a><ul>
+<li>by Gerard Meszaros</li>
+</ul>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/4_resources.md">slides/4_resources.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              26/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/4_resources.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Further reading: Rails TDD</h1></header>
+            
+            
+            <section><ul>
+<li><a href="http://pragprog.com/book/achbd/the-rspec-book">The RSpec Book</a><ul>
+<li>by David Chelimsky et al</li>
+</ul>
+</li>
+<li><a href="http://pragprog.com/book/nrtest/rails-test-prescriptions">Rails Test Prescriptions</a><ul>
+<li>by Noel Rappin</li>
+</ul>
+</li>
+<li><a href="https://peepcode.com/products/test-first-development">Test-First Development for Rails</a><ul>
+<li>Peepcode Screencast</li>
+</ul>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/4_resources.md">slides/4_resources.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              27/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/4_resources.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Further reading: JavaScript TDD</h1></header>
+            
+            
+            <section><ul>
+<li>
+<p><a href="http://tddjs.com/">Test-Driven JavaScript Development</a></p>
+<ul>
+<li>by Christian Johansen</li>
+</ul>
+</li>
+<li>
+<p>Making JavaScript Unit Testing Work (blog series)</p>
+<ul>
+<li><a href="http://4cupsr.us/blog/2011/9/12/making-javascript-unit-testing-work-part-1-what-matters.html">Part 1: What Matters</a></li>
+<li><a href="http://4cupsr.us/blog/2011/9/17/making-javascript-unit-testing-work-part-2-comparing-tools.html">Part 2: Comparing Tools</a></li>
+<li><a href="http://4cupsr.us/blog/2011/9/25/making-javascript-unit-testing-work-part-3-my-choices.html">Part 3: My Choices</a></li>
+</ul>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/4_resources.md">slides/4_resources.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              28/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/4_resources.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Further reading: Writing JavaScript</h1></header>
+            
+            
+            <section><ul>
+<li><a href="http://shop.oreilly.com/product/9780596517748.do">JavaScript: The Good Parts</a><ul>
+<li>by Douglas Crockford</li>
+</ul>
+</li>
+<li><a href="http://shop.oreilly.com/product/0636920018421.do">JavaScript Web Applications</a><ul>
+<li>by Alex MacCaw</li>
+</ul>
+</li>
+<li><a href="http://shop.oreilly.com/product/9780596805531.do">JavaScript: The Definitive Guide</a><ul>
+<li>by David Flanagan</li>
+</ul>
+</li>
+<li><a href="http://shop.oreilly.com/product/9780596806767.do">JavaScript Patterns</a><ul>
+<li>by Stoyan Stefanov</li>
+</ul>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/4_resources.md">slides/4_resources.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              29/30
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/5_wrapup.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Thanks!</h1></header>
+            
+            
+            <section><ul>
+<li>Slides:<ul>
+<li><a href="http://jayunit.net/rails-js-testing-talk">jayunit.net/rails-js-testing-talk</a></li>
+<li><a href="http://github.com/jasonm/rails-js-testing-talk">github.com/jasonm/rails-js-testing-talk</a></li>
+</ul>
+</li>
+<li>Me:<ul>
+<li><a href="mailto:jason.p.morrison@gmail.com">jason.p.morrison@gmail.com</a></li>
+<li><a href="http://twitter.com/jayunit">http://twitter.com/jayunit</a></li>
+<li><a href="http://jayunit.net">http://jayunit.net</a></li>
+</ul>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/5_wrapup.md">slides/5_wrapup.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              30/30
             </aside>
           </footer>
         </div>
@@ -1369,8 +2393,176 @@ body.presenter_view div#current_presenter_notes section {
       
       
       <tr id="toc-row-2">
-        <th><a href="#slide2">Testing!</a></th>
+        <th><a href="#slide2">Testing! with Jason Morrison.</a></th>
         <td><a href="#slide2">2</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide3">This talk</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-4">
+        <th><a href="#slide4">1/4: Goals</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-5">
+        <th><a href="#slide5">Cribbed from:</a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-6">
+        <th><a href="#slide6">Business goals</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-7">
+        <th><a href="#slide7">Code goals</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-8">
+        <th><a href="#slide8">Process goals</a></th>
+        <td><a href="#slide8">8</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-9">
+        <th><a href="#slide9">2/4: Methods</a></th>
+        <td><a href="#slide9">9</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-10">
+        <th><a href="#slide10">How to test</a></th>
+        <td><a href="#slide10">10</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-11">
+        <th><a href="#slide11">Outside-in Development</a></th>
+        <td><a href="#slide11">11</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-12">
+        <th><a href="#slide12">Integration testing</a></th>
+        <td><a href="#slide12">12</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-13">
+        <th><a href="#slide13">Isolation testing</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-14">
+        <th><a href="#slide14">What to test</a></th>
+        <td><a href="#slide14">14</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-15">
+        <th><a href="#slide15">3/4: Tools and examples</a></th>
+        <td><a href="#slide15">15</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-16">
+        <th><a href="#slide16">Writing integration tests</a></th>
+        <td><a href="#slide16">16</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-17">
+        <th><a href="#slide17">Writing Rails isolation tests</a></th>
+        <td><a href="#slide17">17</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-18">
+        <th><a href="#slide18">Writing isolation tests</a></th>
+        <td><a href="#slide18">18</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-19">
+        <th><a href="#slide19">Writing JavaScript isolation tests</a></th>
+        <td><a href="#slide19">19</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-20">
+        <th><a href="#slide20">Interesting JavaScript tests: Timers</a></th>
+        <td><a href="#slide20">20</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-21">
+        <th><a href="#slide21">Interesting JavaScript tests: XHR</a></th>
+        <td><a href="#slide21">21</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-22">
+        <th><a href="#slide22">Interesting JavaScript tests: Async code</a></th>
+        <td><a href="#slide22">22</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-23">
+        <th><a href="#slide23">Running your tests</a></th>
+        <td><a href="#slide23">23</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-24">
+        <th><a href="#slide24">Continuous integration</a></th>
+        <td><a href="#slide24">24</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-25">
+        <th><a href="#slide25">4/4: Resources</a></th>
+        <td><a href="#slide25">25</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-26">
+        <th><a href="#slide26">Further reading: General TDD</a></th>
+        <td><a href="#slide26">26</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-27">
+        <th><a href="#slide27">Further reading: Rails TDD</a></th>
+        <td><a href="#slide27">27</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-28">
+        <th><a href="#slide28">Further reading: JavaScript TDD</a></th>
+        <td><a href="#slide28">28</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-29">
+        <th><a href="#slide29">Further reading: Writing JavaScript</a></th>
+        <td><a href="#slide29">29</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-30">
+        <th><a href="#slide30">Thanks!</a></th>
+        <td><a href="#slide30">30</a></td>
       </tr>
       
       
