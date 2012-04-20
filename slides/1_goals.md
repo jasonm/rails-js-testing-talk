@@ -22,10 +22,6 @@
 * Clean public interfaces
 * Decoupled modules
 
-# Presenter Notes
-
-* Hands: 
-
 ---
 
 # Process goals
