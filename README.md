@@ -19,7 +19,7 @@
 
 Push to the gh-pages branch:
 
-    git push -f origin gh-pages
+    git push -f origin master:gh-pages
 
 ## View
 
