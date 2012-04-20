@@ -50,21 +50,31 @@
 * Useful design tool, bad code is hard to test.
 
 ---
-
 # What to test
 
-TODO
+* Things with a high cost or likelihood of failure
+    * User stories, main paths
+    * Public APIs of your components
+    * Complex logic
+    * Brittle integration points
 
-integration: coarsely-grained user stories, "tracer bullet" / happy cases
+# Presenter Notes
+* Integration: coarsely-grained user stories, "tracer bullet" / happy cases
+* Public APIs: sanity checks, correctness checks, regression test cases, test-driving to build good interfaces
+* Complex logic: model computations, view/presentation helpers with date/time computation, comparisons, edge cases
+* Brittle integration points (presenters, event bindings)
 
-public APIs of your modules (sanity checks, correctness checks, regression test cases, test-driving to build good interfaces)
+---
+# What not to test
 
-especially: complex logic (model computations, view/presentation helpers with date/time computation, comparisons, edge cases)
+* Things with a low cost or likelihood of failure
+* http://37signals.com/svn/posts/3159-testing-like-the-tsa
 
-brittle integration points (event bindings)
+# Presenter Notes
 
-dont test: framework, low-cost failures
-
-dont neglect to test: things that are hard to test
-
-http://37signals.com/svn/posts/3159-testing-like-the-tsa
+* What not to avoid testing
+* Things that are hard to test
+* Your organization's optimal approach:
+    * Comfort and ability with tools
+    * Experience with the usefulness of an existing suite
+    * There are diminishing returns, but the good news with that is: your first efforts should be highly valuable.

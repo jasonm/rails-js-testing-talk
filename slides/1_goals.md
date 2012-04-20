@@ -22,6 +22,10 @@
 * Clean public interfaces
 * Decoupled modules
 
+# Presenter Notes
+
+* Hands: 
+
 ---
 
 # Process goals
@@ -29,3 +33,7 @@
 * Regression safety net
 * Fearless refactoring
 * Team trust
+
+# Presenter Notes
+
+* Hands: Who has made changes or refactorings to a large app?

@@ -1317,7 +1317,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              1/30
+              1/31
             </aside>
           </footer>
         </div>
@@ -1352,7 +1352,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              2/30
+              2/31
             </aside>
           </footer>
         </div>
@@ -1387,7 +1387,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              3/30
+              3/31
             </aside>
           </footer>
         </div>
@@ -1415,7 +1415,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              4/30
+              4/31
             </aside>
           </footer>
         </div>
@@ -1447,7 +1447,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              5/30
+              5/31
             </aside>
           </footer>
         </div>
@@ -1481,7 +1481,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              6/30
+              6/31
             </aside>
           </footer>
         </div>
@@ -1499,12 +1499,17 @@ body.presenter_view div#current_presenter_notes section {
 <li>Readable specs and code</li>
 <li>Clean public interfaces</li>
 <li>Decoupled modules</li>
-</ul></section>
+</ul>
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul>
+<li>Hands: </li>
+</ul>
             
             </section>
           </div>
@@ -1515,7 +1520,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              7/30
+              7/31
             </aside>
           </footer>
         </div>
@@ -1533,12 +1538,17 @@ body.presenter_view div#current_presenter_notes section {
 <li>Regression safety net</li>
 <li>Fearless refactoring</li>
 <li>Team trust</li>
-</ul></section>
+</ul>
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul>
+<li>Hands: Who has made changes or refactorings to a large app?</li>
+</ul>
             
             </section>
           </div>
@@ -1549,7 +1559,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              8/30
+              8/31
             </aside>
           </footer>
         </div>
@@ -1577,7 +1587,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              9/30
+              9/31
             </aside>
           </footer>
         </div>
@@ -1612,7 +1622,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              10/30
+              10/31
             </aside>
           </footer>
         </div>
@@ -1652,7 +1662,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              11/30
+              11/31
             </aside>
           </footer>
         </div>
@@ -1692,7 +1702,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              12/30
+              12/31
             </aside>
           </footer>
         </div>
@@ -1733,7 +1743,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              13/30
+              13/31
             </aside>
           </footer>
         </div>
@@ -1747,19 +1757,28 @@ body.presenter_view div#current_presenter_notes section {
             <header><h1>What to test</h1></header>
             
             
-            <section><p>TODO</p>
-<p>integration: coarsely-grained user stories, "tracer bullet" / happy cases</p>
-<p>public APIs of your modules (sanity checks, correctness checks, regression test cases, test-driving to build good interfaces)</p>
-<p>especially: complex logic (model computations, view/presentation helpers with date/time computation, comparisons, edge cases)</p>
-<p>brittle integration points (event bindings)</p>
-<p>dont test: framework, low-cost failures</p>
-<p>dont neglect to test: things that are hard to test</p>
-<p>http://37signals.com/svn/posts/3159-testing-like-the-tsa</p></section>
+            <section><ul>
+<li>Things with a high cost or likelihood of failure<ul>
+<li>User stories, main paths</li>
+<li>Public APIs of your components</li>
+<li>Complex logic</li>
+<li>Brittle integration points</li>
+</ul>
+</li>
+</ul>
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul>
+<li>Integration: coarsely-grained user stories, "tracer bullet" / happy cases</li>
+<li>Public APIs: sanity checks, correctness checks, regression test cases, test-driving to build good interfaces</li>
+<li>Complex logic: model computations, view/presentation helpers with date/time computation, comparisons, edge cases</li>
+<li>Brittle integration points (presenters, event bindings)</li>
+</ul>
             
             </section>
           </div>
@@ -1770,7 +1789,52 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              14/30
+              14/31
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/2_methods.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>What not to test</h1></header>
+            
+            
+            <section><ul>
+<li>Things with a low cost or likelihood of failure</li>
+<li>http://37signals.com/svn/posts/3159-testing-like-the-tsa</li>
+</ul>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul>
+<li>What not to avoid testing</li>
+<li>Things that are hard to test</li>
+<li>Your organization's optimal approach:<ul>
+<li>Comfort and ability with tools</li>
+<li>Experience with the usefulness of an existing suite</li>
+<li>There are diminishing returns, but the good news with that is: your first efforts should be highly valuable.</li>
+</ul>
+</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/2_methods.md">slides/2_methods.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/31
             </aside>
           </footer>
         </div>
@@ -1805,7 +1869,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              15/30
+              16/31
             </aside>
           </footer>
         </div>
@@ -1839,7 +1903,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              16/30
+              17/31
             </aside>
           </footer>
         </div>
@@ -1878,7 +1942,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              17/30
+              18/31
             </aside>
           </footer>
         </div>
@@ -1919,7 +1983,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              18/30
+              19/31
             </aside>
           </footer>
         </div>
@@ -1958,7 +2022,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              19/30
+              20/31
             </aside>
           </footer>
         </div>
@@ -1988,7 +2052,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              20/30
+              21/31
             </aside>
           </footer>
         </div>
@@ -2023,7 +2087,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              21/30
+              22/31
             </aside>
           </footer>
         </div>
@@ -2051,7 +2115,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              22/30
+              23/31
             </aside>
           </footer>
         </div>
@@ -2070,12 +2134,17 @@ body.presenter_view div#current_presenter_notes section {
 <li><a href="http://rubygems.org/gems/selenium-webdriver">selenium-webdriver</a></li>
 <li><code>rake jasmine:ci</code></li>
 <li><a href="http://johnbintz.github.com/jasmine-headless-webkit/">jasmine-headless-webkit</a></li>
-</ul></section>
+</ul>
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul>
+<li>Selenium vs Capybara-webkit: stopping and debugging</li>
+</ul>
             
             </section>
           </div>
@@ -2086,7 +2155,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              23/30
+              24/31
             </aside>
           </footer>
         </div>
@@ -2120,7 +2189,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              24/30
+              25/31
             </aside>
           </footer>
         </div>
@@ -2156,7 +2225,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              25/30
+              26/31
             </aside>
           </footer>
         </div>
@@ -2195,7 +2264,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              26/30
+              27/31
             </aside>
           </footer>
         </div>
@@ -2238,7 +2307,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              27/30
+              28/31
             </aside>
           </footer>
         </div>
@@ -2283,7 +2352,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              28/30
+              29/31
             </aside>
           </footer>
         </div>
@@ -2330,7 +2399,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              29/30
+              30/31
             </aside>
           </footer>
         </div>
@@ -2372,7 +2441,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              30/30
+              31/31
             </aside>
           </footer>
         </div>
@@ -2471,98 +2540,104 @@ body.presenter_view div#current_presenter_notes section {
       
       
       <tr id="toc-row-15">
-        <th><a href="#slide15">3/4: Tools and examples</a></th>
+        <th><a href="#slide15">What not to test</a></th>
         <td><a href="#slide15">15</a></td>
       </tr>
       
       
       <tr id="toc-row-16">
-        <th><a href="#slide16">Writing integration tests</a></th>
+        <th><a href="#slide16">3/4: Tools and examples</a></th>
         <td><a href="#slide16">16</a></td>
       </tr>
       
       
       <tr id="toc-row-17">
-        <th><a href="#slide17">Writing Rails isolation tests</a></th>
+        <th><a href="#slide17">Writing integration tests</a></th>
         <td><a href="#slide17">17</a></td>
       </tr>
       
       
       <tr id="toc-row-18">
-        <th><a href="#slide18">Writing isolation tests</a></th>
+        <th><a href="#slide18">Writing Rails isolation tests</a></th>
         <td><a href="#slide18">18</a></td>
       </tr>
       
       
       <tr id="toc-row-19">
-        <th><a href="#slide19">Writing JavaScript isolation tests</a></th>
+        <th><a href="#slide19">Writing isolation tests</a></th>
         <td><a href="#slide19">19</a></td>
       </tr>
       
       
       <tr id="toc-row-20">
-        <th><a href="#slide20">Interesting JavaScript tests: Timers</a></th>
+        <th><a href="#slide20">Writing JavaScript isolation tests</a></th>
         <td><a href="#slide20">20</a></td>
       </tr>
       
       
       <tr id="toc-row-21">
-        <th><a href="#slide21">Interesting JavaScript tests: XHR</a></th>
+        <th><a href="#slide21">Interesting JavaScript tests: Timers</a></th>
         <td><a href="#slide21">21</a></td>
       </tr>
       
       
       <tr id="toc-row-22">
-        <th><a href="#slide22">Interesting JavaScript tests: Async code</a></th>
+        <th><a href="#slide22">Interesting JavaScript tests: XHR</a></th>
         <td><a href="#slide22">22</a></td>
       </tr>
       
       
       <tr id="toc-row-23">
-        <th><a href="#slide23">Running your tests</a></th>
+        <th><a href="#slide23">Interesting JavaScript tests: Async code</a></th>
         <td><a href="#slide23">23</a></td>
       </tr>
       
       
       <tr id="toc-row-24">
-        <th><a href="#slide24">Continuous integration</a></th>
+        <th><a href="#slide24">Running your tests</a></th>
         <td><a href="#slide24">24</a></td>
       </tr>
       
       
       <tr id="toc-row-25">
-        <th><a href="#slide25">4/4: Resources</a></th>
+        <th><a href="#slide25">Continuous integration</a></th>
         <td><a href="#slide25">25</a></td>
       </tr>
       
       
       <tr id="toc-row-26">
-        <th><a href="#slide26">Further reading: General TDD</a></th>
+        <th><a href="#slide26">4/4: Resources</a></th>
         <td><a href="#slide26">26</a></td>
       </tr>
       
       
       <tr id="toc-row-27">
-        <th><a href="#slide27">Further reading: Rails TDD</a></th>
+        <th><a href="#slide27">Further reading: General TDD</a></th>
         <td><a href="#slide27">27</a></td>
       </tr>
       
       
       <tr id="toc-row-28">
-        <th><a href="#slide28">Further reading: JavaScript TDD</a></th>
+        <th><a href="#slide28">Further reading: Rails TDD</a></th>
         <td><a href="#slide28">28</a></td>
       </tr>
       
       
       <tr id="toc-row-29">
-        <th><a href="#slide29">Further reading: Writing JavaScript</a></th>
+        <th><a href="#slide29">Further reading: JavaScript TDD</a></th>
         <td><a href="#slide29">29</a></td>
       </tr>
       
       
       <tr id="toc-row-30">
-        <th><a href="#slide30">Thanks!</a></th>
+        <th><a href="#slide30">Further reading: Writing JavaScript</a></th>
         <td><a href="#slide30">30</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-31">
+        <th><a href="#slide31">Thanks!</a></th>
+        <td><a href="#slide31">31</a></td>
       </tr>
       
       

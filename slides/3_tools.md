@@ -71,6 +71,10 @@ TODO: Example XHR test with fake server (sinon)
 * `rake jasmine:ci`
 * [jasmine-headless-webkit](http://johnbintz.github.com/jasmine-headless-webkit/)
 
+# Presenter Notes
+
+* Selenium vs Capybara-webkit: stopping and debugging
+
 ---
 # Continuous integration
 
