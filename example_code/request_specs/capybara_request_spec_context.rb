@@ -16,7 +16,7 @@ feature 'Viewing an Application', :js => true do
     And 'I click on the first application' do
       click_link @application.title
     end
-    Then 'I should see the assignemnt' do
+    Then 'I should see the application' do
       page.should have_content @application.title
       page.should have_content @application.description
     end
@@ -35,7 +35,7 @@ feature 'Viewing an Application', :js => true do
     And 'I click on the first application' do
       click_link @application.title
     end
-    Then 'I should see the assignemnt' do
+    Then 'I should see the application' do
       page.should have_content @application.title
       page.should have_content @application.description
     end

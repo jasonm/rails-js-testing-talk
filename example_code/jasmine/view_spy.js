@@ -2,8 +2,8 @@ describe('Views.Tasks.New', function() {
   var $el, task, view;
 
   beforeEach(function() {
-    task = new Iora.Models.Task({id: 1});
-    view = new Iora.Views.Tasks.New({model: task});
+    task = new App.Models.Task({id: 1});
+    view = new App.Views.Tasks.New({model: task});
   });
 
   describe('Creating a task', function() {

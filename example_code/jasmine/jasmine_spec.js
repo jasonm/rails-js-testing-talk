@@ -1,9 +1,9 @@
-describe("Views.Members.BasicInfo", function() {
+describe("App.Views.Members.BasicInfo", function() {
   var view, $el, member;
 
   beforeEach(function() {
-    member = new Iora.Models.Member(this.fixtures.Models.Members.tim);
-    view   = new Views.Members.BasicInfo({ model: member });
+    member = new App.Models.Member(this.fixtures.Models.Members.tim);
+    view   = new App.Views.Members.BasicInfo({ model: member });
     $el    = $(view.el);
   });
 

@@ -9,12 +9,15 @@
 ---
 # Writing integration tests
 * `capybara` request specs
+* Cucumber?
 
 # Presenter Notes
 
 * Practices Cucumber encourages:
     * thinking outside-in
     * abstract reusable steps, paths, named interface elements
+* You can think outside-in without Cucumber
+* You can write implementation-dependent tests with Cucumber
 
 ---
 # Writing Rails isolation tests
@@ -32,7 +35,7 @@
     * FG: copycopter/spec/models/project_spec.rb
 
 ---
-# Choosing your tools
+# JavaScript tests: choosing your tools
 
 * From [Making JS Unit Testing Work](http://4cupsr.us/blog/2011/9/12/making-javascript-unit-testing-work-part-1-what-matters.html):
     * Ease of writing readable tests
@@ -43,11 +46,15 @@
     * Support for your backend
     * Cross-browser compatibility
 
+# Presenter Notes
+
+* By Phil Sarin
+
 ---
 # Writing JavaScript isolation tests
 
 * [jasmine](http://pivotal.github.com/jasmine/)
-    * [jasmine-gem HEAD](http://github.com/pivotal/jasmine-gem)
+    * [jasmine-gem (edge)](http://github.com/pivotal/jasmine-gem)
     * [jasmine-jquery](https://github.com/velesin/jasmine-jquery)
     * [Underscore-Matchers-For-Jasmine](https://github.com/raganwald/Underscore-Matchers-for-Jasmine)
     * [sinon.js](http://sinonjs.org)

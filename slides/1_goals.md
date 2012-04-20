@@ -2,9 +2,12 @@
 
 ---
 
-# Cribbed from:
+# Goals
+## Cribbed from the [thoughtbot playbook](http://playbook.thoughtbot.com/finding-a-rhythm/test-driven-development/) 
 
-* [thoughtbot playbook](http://playbook.thoughtbot.com/finding-a-rhythm/test-driven-development/) 
+* Business
+* Code
+* Process
 
 ---
 
@@ -13,6 +16,11 @@
 * Deliver more value, faster
 * Always ship working software
 * Adapt to change quickly
+
+# Presenter Notes
+
+* We're a consultancy, but this applies to products, too
+* Speed: at the beginning vs at the end
 
 ---
 
@@ -28,8 +36,7 @@
 
 * Regression safety net
 * Fearless refactoring
-* Team trust
 
 # Presenter Notes
 
-* Hands: Who has made changes or refactorings to a large app?
+* Hands: Who has made changes or refactorings to a large app?  With / without tests?  Valuable?
