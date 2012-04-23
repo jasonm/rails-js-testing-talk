@@ -8,11 +8,12 @@
 # Presenter Notes
 
 ---
-# Testing! with Jason Morrison.
+# Testing apps with Rails and JavaScript
+## with Jason Morrison
 
 # Presenter Notes
 
-* Introduce me
+* Introduce me: used to non-tdd, big QA dept, struggled with tdd, now second nature
 * Hands up: Ruby/Rails? JS? Other? -- Testing?
 * Way too much ground to comprehensively cover TDD practices, techniques, and tools
 * Hoping you find a few interesting things that you can apply right now

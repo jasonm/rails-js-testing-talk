@@ -70,7 +70,7 @@
 ---
 # Interesting JavaScript tests: Timers
 
-* `setTimeout`, `setInterval`
+* `setTimeout`, `setInterval`, `requestAnimationFrame`
 * Animations
 * Polling
 
